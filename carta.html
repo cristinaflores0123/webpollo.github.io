@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta - Alicia</title>
+    <link rel="stylesheet" href="estilocarta.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="navbar">
+            <div class="icons">
+                <a href="https://www.facebook.com/"><img src="imagenes/facebook.ico" alt="Facebook" height="30px"></a>
+                <a href="https://www.instagram.com/"><img src="imagenes/instagram.ico" alt="Instagram" height="30px"></a>
+                <a href="https://wa.me/933553146"><img src="imagenes/whatsapp.ico" alt="WhatsApp" height="33px"></a>
+            </div>
+        </div>
+        <div class="logo-container">
+            <a href="index.html" class="logo">WE GOT POLLO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html" class="active">Carta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="cart-icon">
+            <img src="imagenes/carrito.png" alt="Carrito" height="30px">
+        </div>
+    </header>
+
+    <!-- Sección de Carta -->
+    <section class="menu-section">
+        <h2 class="menu-section h2">Carta</h2>
+        <div class="platos">
+
+            <article class="plato">
+                <img src="imagenes/pollobrasa.png" alt="Pollo a la Brasa">
+                <h1>Pollo a la brasa</h1>
+                <p>1 Pollo + papas fritas + ensalada</p>
+                <div class="plato--info">
+                    <p>S/.60.00</p>
+                    <button type="button" onclick="addToCart('Pollo a la Brasa', 60)" aria-label="Añadir Pollo a la Brasa al carrito">+</button>
+                </div>                    
+            </article>
+
+            <article class="plato">
+                <img src="imagenes/mediopollo.png" alt="Pollo a la Brasa">
+                <h1>1/2 Pollo a la Brasa</h1>
+                <p>1/2 pollo + papas fritas + ensalada</p>
+                <div class="plato--info">
+                    <p>S/.35.00</p>
+                    <button type="button" onclick="addToCart('1/2 Pollo a la Brasa', 35)" aria-label="Añadir 1/2 Pollo a la Brasa al carrito">+</button>
+            </div>
+            </article>
+
+            <article class="plato">
+                <img src="imagenes/cuartopollo.png" alt="Pollo a la Brasa">
+                <h1>1/4 Pollo a la Brasa</h1>
+                <p>1/4 pollo + papas fritas + ensalada</p>
+                <div class="plato--info">
+                    <p>S/.18.00</p>
+                    <button type="button" onclick="addToCart('1/4 Pollo a la Brasa', 18)" aria-label="Añadir 1/4 Pollo a la Brasa al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/salchipapa.png" alt="salchipapa">
+                <h1>Salchipapa</h1>
+                <p>Salchipapa clasica</p>
+                <div class="plato--info">
+                    <p>S/.10.00</p>
+                    <button type="button" onclick="addToCart('Salchipapa', 10)" aria-label="Añadir Salchipapa al carrito">+</button>
+        </div>
+            </article> 
+            <article class="plato">
+                <img src="imagenes/chaufa.png" alt="Chaufa">
+                <h1>Chaufa</h1>
+                <p>Arroz Chaufa de pollo</p>
+                <div class="plato--info">
+                    <p>S/.12.00</p>
+                    <button type="button" onclick="addToCart('Chaufa', 12)" aria-label="Añadir Chaufa al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/anticuchos.png" alt="Anticuchos">
+                <h1>Anticuchos</h1>
+                <p>2 Palos de corazón aderezados en salsa anticuchera, acompañado de 2 rodajas de papa sancochadas y sus cremas.</p>
+                <div class="plato--info">
+                    <p>S/.20.00</p>
+                    <button type="button" onclick="addToCart('Anticuchos', 20)" aria-label="Añadir Anticuchos al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/papas-fritas.png" alt="Papas Fritas">
+                <h1>Papas Fritas</h1>
+                <p>1 plato  bien taipa de papas fritas</p>
+                <div class="plato--info">
+                    <p>S/.10.00</p>
+                    <button type="button" onclick="addToCart('Papas Fritas', 10)" aria-label="Añadir Papas Fritas al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/hamburguesa.png" alt="Hamburguesa">
+                <h1>Hamburguesa</h1>
+                <p>Hamburguesa Clasica</p>
+                <div class="plato--info">
+                    <p>S/.12.00</p>
+                    <button type="button" onclick="addToCart('Hamburguesa', 12)" aria-label="Añadir Hamburguesa al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/hamburguesa-grande.png" alt="Hamburguesa">
+                <h1>Triple Cheeseburguer</h1>
+                <p>Hamburguesa con triple carne y queso</p>
+                <div class="plato--info">
+                    <p>S/.18.00</p>
+                    <button type="button" onclick="addToCart('Triple Cheeseburguer', 18)" aria-label="Añadir Triple Cheeseburguer al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/jarra.png" alt="Chaufa">
+                <h1>Limonada Frozen o Chicha Morada</h1>
+                <p>1L de Limonada Frozen o Chicha</p>
+                <div class="plato--info">
+                    <p>S/.10.00</p>
+                    <button type="button" onclick="addToCart('Limonada Frozen o Chicha Morada', 10)" aria-label="Añadir Limonada Frozen o Chicha Morada al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/gaseosa.png" alt="Chaufa">
+                <h1>Gaseosas</h1>
+                <p>Combo de gaseosas IncaCola y CocaCola</p>
+                <div class="plato--info">
+                    <p>S/.12.00</p>
+                    <button type="button" onclick="addToCart('Gaseosas', 12)" aria-label="Añadir Gaseosas al carrito">+</button>
+        </div>
+            </article>
+            <article class="plato">
+                <img src="imagenes/torta.png" alt="Torta">
+                <h1>Torta</h1>
+                <p>Torta de chocolate</p>
+                <div class="plato--info">
+                    <p>S/.15.00</p>
+                    <button type="button" onclick="addToCart('Torta', 15)" aria-label="Añadir Torta al carrito">+</button>
+        </div>
+            </article>
+    </section>
+
+        <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>UBÍCANOS</h3>
+            <p>Visítanos en nuestro único local en Chuquitanta</p>
+        </div>
+        <div class="footer-section">
+            <h3>HORARIO DE ATENCIÓN</h3>
+            <ul>
+                <li>Domingo a jueves: 08:00 am - 11:00 pm</li>
+                <li>Viernes y sábado: 08:00 am - 00:00 am</li>
+                <li>Delivery todos los días desde las 12:00 pm</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>ENLACES DE INTERÉS</h3>
+            <ul>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>¡SÍGUENOS EN REDES SOCIALES!</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><img src="imagenes/facebook.ico" alt="Facebook" height="30px"></a>
+                <a href="https://www.instagram.com/"><img src="imagenes/instagram.ico" alt="Instagram" height="30px"></a>
+                <a href="https://wa.me/933553146"><img src="imagenes/whatsapp.ico" alt="WhatsApp" height="30px"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nueva sección para los derechos reservados -->
+    <div class="rights">
+        <p>&copy; 2024 We Got Pollo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="scriptcarta.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    margin: 0; /* Quita los márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Define la fuente predeterminada */
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total del elemento */
+}
+
+/* Header (Encabezado) */
+.header {
+    background-color: #4CAF50; /* Fondo verde */
+    padding: 15px 20px; /* Espaciado interno */
+    display: flex; /* Usa flexbox para el diseño interno */
+    justify-content: space-between; /* Distribuye el contenido equitativamente */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Contenedor de navegación */
+.navbar {
+    display: flex; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex: 1; /* Toma 1 unidad de espacio flexible */
+}
+
+/* Contenedor del logotipo */
+.logo-container {
+    text-align: center; /* Centra el texto */
+    flex: 2; /* Toma más espacio flexible */
+}
+
+/* Estilo para los enlaces del menú de navegación */
+.nav-links {
+    list-style: none; /* Quita los puntos de lista */
+    display: flex; /* Coloca los enlaces en línea */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    margin-top: 10px; /* Margen superior */
+}
+
+.nav-links li a {
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    color: white; /* Color blanco */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.nav-links li a.active {
+    color: #FFD700; /* Color dorado para el enlace activo */
+}
+
+/* Estilo para el texto del logotipo */
+.logo {
+    font-size: 24px; /* Tamaño del texto */
+    color: black; /* Color negro */
+    font-weight: bold; /* Texto en negrita */
+    font-family: 'Algerian', sans-serif; /* Fuente personalizada */
+}
+
+/* Icono del carrito */
+.cart-icon {
+    flex: 1; /* Toma 1 unidad de espacio flexible */
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.cart-icon img {
+    height: 30px; /* Altura del icono */
+}
+
+/* Sección Hero (destacada) */
+.hero {
+    text-align: center; /* Centra el texto */
+    background-color: #FBD603; /* Fondo amarillo */
+    padding: 20px; /* Espaciado interno */
+}
+
+.hero h1 {
+    font-size: 24px; /* Tamaño del texto */
+    color: #E45A0A; /* Color naranja */
+}
+
+.hero img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 500px; /* Tamaño máximo */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Secciones generales */
+.section {
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilo para la sección roja */
+.red {
+    background-color: #E83300; /* Fondo rojo */
+}
+
+.section .text h2 {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    font-size: 3rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #fff; /* Color blanco */
+}
+
+.section .text p {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    font-size: 2rem; /* Tamaño del texto */
+    color: #fff; /* Color blanco */
+}
+
+/* Estilo para la sección amarilla */
+.yellow {
+    background-color: #FFDE00; /* Fondo amarillo */
+}
+
+/* Imágenes dentro de las secciones */
+.section img {
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    max-width: 300px; /* Tamaño máximo */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Footer (pie de página) */
+.footer {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 40px 20px; /* Espaciado interno */
+    display: flex; /* Diseño de flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea al inicio vertical */
+    flex-wrap: wrap; /* Permite que los elementos envuelvan */
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1200px; /* Ancho máximo */
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Espaciado uniforme */
+    flex-wrap: wrap; /* Permite envoltura */
+    gap: 20px; /* Espaciado entre secciones */
+}
+
+/* Estilo para cada sección del footer */
+.footer-section {
+    flex: 1; /* Toma espacio flexible */
+    min-width: 200px; /* Ancho mínimo */
+}
+
+.footer-section h3 {
+    font-size: 18px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border-bottom: 2px solid #FFD700; /* Línea dorada debajo del texto */
+    display: inline-block; /* Mismo ancho que el contenido */
+    padding-bottom: 5px; /* Espaciado interno debajo del texto */
+}
+
+.footer-section ul,
+.footer-section p {
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    list-style: none; /* Quita los puntos de lista */
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+.footer-section a {
+    color: white; /* Color blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-section a:hover {
+    color: #FFD700; /* Color dorado al pasar el mouse */
+}
+
+/* Redes sociales */
+.social-links img {
+    margin: 0 10px; /* Espaciado horizontal */
+    transition: transform 0.3s ease-in-out; /* Animación suave al escalar */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el mouse */
+}
+
+/* Estilo para los derechos reservados */
+.rights {
+    text-align: center; /* Centra el texto */
+    color: white; /* Texto blanco */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    background-color: #4CAF50; /* Fondo verde, igual que el del footer */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .footer-section {
+        text-align: center; /* Centra el texto */
+    }
+
+    .social-links img {
+        margin: 5px; /* Reduce el margen */
+    }
+}
+
+/* Carrusel */
+.d-item {
+    height: 650px; /* Altura fija para el carrusel */
+}
+
+.d-img {
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    object-fit: cover; /* Escala la imagen para que cubra el contenedor */
+    filter: brightness(0.6); /* Reduce el brillo */
+}
+
+.carousel-caption h1 {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    font-size: 6rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #fff; /* Texto blanco */
+}
+
+
+
+/* Sección de Carta */
+.menu-section {
+    background-color: #FFD700;
+    padding: 30px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.menu-item button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #45a049;
+}
+
+

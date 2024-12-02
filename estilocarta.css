@@ -1,0 +1,238 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: #4CAF50;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.logo-container {
+    text-align: center;
+    flex: 2;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links li a.active {
+    color: #FFD700;
+}
+
+.logo {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Algerian', sans-serif;
+}
+
+.cart-icon {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-icon img {
+    height: 30px;
+}
+
+/* Sección de Carta */
+.menu-section {
+    background-color: #FFD700;
+    padding: 30px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Seccion platos */
+.comida{
+    width: 90%;
+    margin-inline:auto;
+}
+.platos{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 85px;
+}
+@media (min-width:768px) {
+    .platos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:992px) {
+    .platos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.comida--titulo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 85px;
+}
+@media (min-width:768px) {
+    .comida--titulo{
+        text-align: start;
+    }
+}
+.plato{
+    width: 80%;
+    margin-inline:auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(196, 196, 196, 0.426);
+}
+
+.plato img{
+    width: 150px;
+    filter: drop-shadow(0 0 0.9rem orange);
+    margin-top: -85px;
+}
+.plato p{
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+}
+.plato--info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.plato--info p{
+    font-weight: 900;
+}
+.plato--info button{
+    background-color: orange;
+    color: white;
+    font-weight: 900;
+    padding: 5px 12px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.plato--info button:hover{
+    cursor: pointer;
+}
+/* Footer */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para cada sección del footer */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section ul,
+.footer-section p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #FFD700;
+}
+
+/* Redes sociales */
+.social-links img {
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para los derechos reservados */
+.rights {
+    text-align: center; /* Centra el texto */
+    color: white; /* Texto blanco */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    background-color: #4CAF50; /* Fondo verde, igual que el del footer */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links img {
+        margin: 5px;
+    }
+}
